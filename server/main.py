@@ -58,7 +58,8 @@ except (ModuleNotFoundError, ImportError):
 
 app = FastAPI(title='ConviAI Backend')
 
-# CORS — allow Next.js dev server, Cloudflare Pages, Vercel, and public domain connections
+# CORS — allow the Next.js dev server (3000) and the legacy Vite dev server (5173),
+# plus the production cloud deploys. The Vite origin is kept harmless.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
