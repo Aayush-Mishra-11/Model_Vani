@@ -1,8 +1,8 @@
 {
-  "name": "conviai",
+  "name": "vani",
   "version": "1.0.0",
   "private": true,
-  "description": "AI-Based Virtual Assistant for Communication Skills Improvement",
+  "description": "Vani AI — Speech & Communication Coaching Platform",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
