@@ -6,9 +6,9 @@
 
 export const env = {
   apiBaseUrl:
-    process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://api.your-backend.com",
+    process.env.NEXT_PUBLIC_API_URL ?? "https://https://model-vani.onrender.com",
   socketUrl:
-    process.env.NEXT_PUBLIC_SOCKET_URL ?? process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://api.your-backend.com",
+    process.env.NEXT_PUBLIC_SOCKET_URL ?? process.env.NEXT_PUBLIC_API_URL ?? "https://https://model-vani.onrender.com",
   appName: process.env.NEXT_PUBLIC_APP_NAME ?? "Vani AI",
   // When "true", the axios client returns mock data and makes ZERO network calls.
   // Perfect for clicking through the UI with no backend. Set to "false" (or remove)
