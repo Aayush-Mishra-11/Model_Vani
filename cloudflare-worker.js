@@ -9,7 +9,7 @@
 
 export default {
   async fetch(request, env, ctx) {
-    const RENDER_BACKEND = env.NEXT_PUBLIC_API_URL || "https://model-vani.onrender.com";
+    const RENDER_BACKEND = env.NEXT_PUBLIC_API_URL || "https://model-vani-p22q.onrender.com";
     const url = new URL(request.url);
 
     // Construct target URL on Render backend
@@ -17,7 +17,7 @@ export default {
 
     // Clone and prepare headers
     const newHeaders = new Headers(request.headers);
-    newHeaders.set("Host", "https://model-vani.onrender.com");
+    newHeaders.set("Host", "https://model-vani-p22q.onrender.com");
 
     // Handle CORS preflight options request
     if (request.method === "OPTIONS") {
